@@ -1,0 +1,14 @@
+{
+  "name": "azure-function-dev-rewrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "swa start ./public --run \"remix dev\" --api ."
+  },
+  "author": "Logan McAnsh <logan@mcan.sh> (https://mcan.sh/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "0.7.1"
+  }
+}
