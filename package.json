@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "swa start ./public --api .",
     "prepare": "patch-package",
-    "build": "echo \"<p>placeholder</p>\" >> public/index.html"
+    "build": "echo \"<p>placeholder</p>\" > public/index.html"
   },
   "author": "Logan McAnsh <logan@mcan.sh> (https://mcan.sh/)",
   "license": "MIT",

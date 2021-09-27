@@ -23,7 +23,15 @@ module.exports = async (context, req) => {
       headers: {
         "Content-Type": "text/html",
       },
-      body: createHTML("Azure Functions", "Hello World!"),
+      body: createHTML(
+        "Azure Functions",
+        `
+          <div>
+            <h1>Azure Functions</h1>
+            <a href="/page-2">Go to page 2</a>
+          </div>
+        `
+      ),
     };
   }
 
@@ -33,7 +41,15 @@ module.exports = async (context, req) => {
       headers: {
         "Content-Type": "text/html",
       },
-      body: createHTML("Page 2", "Hello From Page 2!"),
+      body: createHTML(
+        "Page 2",
+        `
+          <div>
+            <h1>Page 2</h1>
+            <a href="/">Go to Home</a>
+          </div>
+        `
+      ),
     };
   }
 
