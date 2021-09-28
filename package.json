@@ -11,6 +11,7 @@
   "author": "Logan McAnsh <logan@mcan.sh> (https://mcan.sh/)",
   "license": "MIT",
   "devDependencies": {
+    "@azure/functions": "1.2.3",
     "@azure/static-web-apps-cli": "0.7.2",
     "patch-package": "6.4.7"
   }

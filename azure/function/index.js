@@ -16,9 +16,9 @@ function createHTML(title, content) {
 }
 
 module.exports = async (context, req) => {
-  let url = req.headers["x-ms-original-url"];
+  let url = new URL(req.headers["x-ms-original-url"]);
 
-  if (url === "/") {
+  if (url.pathname === "/") {
     return {
       status: 200,
       headers: {
@@ -36,7 +36,7 @@ module.exports = async (context, req) => {
     };
   }
 
-  if (url === "/page-2") {
+  if (url.pathname === "/page-2") {
     return {
       status: 200,
       headers: {
